@@ -1,0 +1,13 @@
+<mvc:View controllerName="com.sap.zfioritraining.controller.Home"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+            <content>
+                <List xmlns:cd="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" noDataText="Drop list items here" id="list0" items="{/Employees}">
+                    <items>
+                        <StandardListItem type="Navigation" title="{FirstName}{LastName}" description="{Address}" icon="sap-icon://employee" id="item0" busyIndicatorDelay="100"/>
+                    </items> 
+                </List>
+            </content>
+    </Page>
+</mvc:View>
